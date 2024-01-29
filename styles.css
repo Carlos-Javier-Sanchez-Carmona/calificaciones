@@ -1,0 +1,18 @@
+.table{
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+/* Para navegadores basados en Webkit (Chrome, Safari, etc.) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Para Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
