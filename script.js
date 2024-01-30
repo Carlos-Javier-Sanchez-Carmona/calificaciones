@@ -40,6 +40,17 @@ function promedioGral() {
       3;
     document.getElementById("promedio3").innerHTML = promedio3.toFixed(2);
     console.log("Promedio 3: " + promedio3);
+
+      //get all promedio
+var promedio_materia1 = document.getElementById("promedio1").innerHTML;
+var promedio_materia2 = document.getElementById("promedio2").innerHTML;
+var promedio_materia3 = document.getElementById("promedio3").innerHTML;
+
+console.log(`promedio materia 1: ${promedio_materia1}, promedio materia 2: ${promedio_materia2}, promedio materia 3: ${promedio_materia3}`);
+//calculate average of averages
+const promedioGral =
+  (parseFloat(promedio_materia1) + parseFloat(promedio_materia2) + parseFloat(promedio_materia3)) / 3;
+document.getElementById("promedio_gral").innerHTML = promedioGral.toFixed(2);
   }
 
   //invocando funcion para los promedios por materia
@@ -92,16 +103,8 @@ function promedioGral() {
     console.log(`el valor de calificacion3 ha cambiado a: ${this.value}`);
   });
 
-  //get all promedio
-let promedio_materia1 = document.getElementById("promedio1").innerHTML;
-let promedio_materia2 = promedio2;
-let promedio_materia3 = promedio3;
-//calculate average of averages
-const promedioGral =
-  (parseFloat(promedio_materia1)+ parseFloat(promedio_materia2) + parseFloat(promedio_materia3)) / 3;
-document.getElementById("promedio_gral").innerHTML = promedioGral.toFixed(2);
-}
 
+}
 
 //invocando funcion para los promedios generales
 promedioGral();
