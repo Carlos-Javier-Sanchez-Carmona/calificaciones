@@ -93,9 +93,9 @@ function promedioGral() {
   });
 
   //get all promedio
-let promedio_materia1 = promedio
-let promedio_materia2 = promedio;
-let promedio_materia3 = promedio;
+let promedio_materia1 = document.getElementById("promedio1").innerHTML;
+let promedio_materia2 = promedio2;
+let promedio_materia3 = promedio3;
 //calculate average of averages
 const promedioGral =
   (parseFloat(promedio_materia1)+ parseFloat(promedio_materia2) + parseFloat(promedio_materia3)) / 3;
